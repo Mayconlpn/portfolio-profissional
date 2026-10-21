@@ -31,12 +31,8 @@ services:
     value: 'True'
   - key: DJANGO_SUPERUSER_USERNAME
     value: admin
-  - key: DJANGO_SUPERUSER_PASSWORD
-    sync: false
 databases:
 - name: portfolio-maycon-db
   plan: free
   region: virginia
-  databaseName: portfolio
-  user: portfolio
   ipAllowList: []
