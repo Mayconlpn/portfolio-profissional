@@ -8,7 +8,7 @@ O código completo está em `portfolio_profissional_render.zip`. O comando de bu
 
 O `render.yaml` define um serviço Python e PostgreSQL, ambos no plano gratuito e na região Virginia. Use o workspace **Portifólio**. A chave do Django é gerada pelo Render e a conexão do banco é vinculada pelo Blueprint.
 
-O usuário administrador inicial é `admin`. A senha inicial é definida somente na variável `DJANGO_SUPERUSER_PASSWORD` do Render. Após o primeiro acesso, remova essa variável; a conta já criada é preservada.
+Para criar o administrador inicial, configure uma senha exclusiva de pelo menos 12 caracteres na variável `DJANGO_SUPERUSER_PASSWORD` do Render e faça um deploy. O usuário será `admin`. Depois do primeiro acesso, remova essa variável; a conta criada é preservada. Nenhuma senha foi incluída no código.
 
 O banco gratuito expira após 30 dias. Fotos e outros uploads locais não persistem entre reinícios: configure armazenamento externo antes de utilizar mídia em produção.
 
